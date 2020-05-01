@@ -3,6 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux';
 import * as actions from '../actions'
 import Header from './Header';
+import Dashboard from './Dashboard'
+
+
+
 
 class App extends Component {
     componentDidMount() {
@@ -12,9 +16,11 @@ class App extends Component {
         return (
         <div className="container">
             <BrowserRouter>
-                <Switch>
+                <div>
                     <Header />
-                </Switch>
+                    <Route exact path='/surveys' component={Dashboard} />
+
+                </div>
             </BrowserRouter>
         </div>
     )
