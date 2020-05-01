@@ -6,11 +6,11 @@ class Header extends Component {
            <nav>
                <div className="nav-wrapper">
                     <a className="left brand-logo">
-                        Emaily
+                        Logo
                     </a>
                     <ul className="right">
                         <li>
-                            <a>Logo</a>
+                            <a>Login with Google</a>
                         </li>
                     </ul>
                </div>
